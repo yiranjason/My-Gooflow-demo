@@ -59,6 +59,7 @@ instance.myEvent = function(){
         this;  //GooFlow实例本身
         //TODO: 事件响应的实现
 };```
+
 |事件|意义|
 |:-|:-|
 |onBtnNewClick|工具栏回调函数：新建流程图按钮被点中|
