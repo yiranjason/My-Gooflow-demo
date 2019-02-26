@@ -62,4 +62,21 @@
 |事件|意义|
 |:-|:-|
 |onBtnNewClick|工具栏回调函数：新建流程图按钮被点中|
-|onBtnOpenClick|打开流程图按钮事件定义。|
+|onBtnOpenClick|工具栏回调函数：打开流程图按钮事件定义|
+|onBtnSaveClick|工具栏回调函数：保存流程图按钮定义|
+|onFreshClick|工具栏回调函数：重载流程图按钮定义|
+|onExpandClick|工具栏回调函数：扩大画布按钮定义|
+|onPrintClick()|打印机按钮事件定义|
+
+- 流程图元素事件
+
+> 节点/连线/分组泳道的一些操作事件，用户可自行重定义。这些事件可直接通过this访问GooFlow实例本身；并且这些事件触发的方法若返回false将阻止默认操作或事件发生。<br>
+`instance.myEvent = function( args[] ){
+    this;  //GooFlow实例本身
+    //TODO: 事件响应的实现
+    return bool; //根据实例情况返回false阻止默认事件，或者返回其它值让默认事件发生
+};`
+
+|事件及描述|传参|参数说明|
+|:-|:-|:-|
+|onItemAdd|`(id,type,json)`|**id**：元素唯一标识<br>**type**：'node'节点，'line'连线，'area'分组泳道|
