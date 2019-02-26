@@ -9,7 +9,6 @@
 - 中文教程：https://github.com/wangduanduan/jsplumb-chinese-tutorial
 - 官网demo： https://jsplumbtoolkit.com
 
-
 ### [KityMinder Editor](https://github.com/fex-team/kityminder-editor)
 
 > 百度脑图中发现的，该demo来源于百度fex团队
@@ -48,3 +47,19 @@
 |haveGroup|true|是否启用组织划分框编辑如为否, 则左侧工具栏的 group 工具将不出现, 但是已经画了的“组织划分框”还是会出现的|
 |useOpenStack|true|是否启用回滚线|
 |editable|true|是否可编辑, 仅在 haveTool=false 时有意义|
+
+#### Event hook | 事件钩子
+
+- 顶部栏按钮事件
+
+> 当工具栏按钮被点击时触发的事件定义(虚函数)，只有初始化GooFlow实例时设置了顶部栏，这些事件钩子才存在。因为可直接用this访问GooFlow实例本身，无传参；用户可自行重定义。
+另外，用户还可通过GooFlow实例内置的bindHeadBtnEvent接口，自行扩展另外自定义的头部按钮的点击事件。
+``` javaScript
+instance.myEvent = function(){
+        this;  //GooFlow实例本身
+        //TODO: 事件响应的实现
+};```
+|事件|意义|
+|:-|:-|
+|onBtnNewClick|工具栏回调函数：新建流程图按钮被点中|
+|onBtnOpenClick|打开流程图按钮事件定义。|
