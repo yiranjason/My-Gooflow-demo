@@ -53,7 +53,7 @@
 - 顶部栏按钮事件
 
 > 当工具栏按钮被点击时触发的事件定义(虚函数)，只有初始化GooFlow实例时设置了顶部栏，这些事件钩子才存在。因为可直接用this访问GooFlow实例本身，无传参；用户可自行重定义。
-另外，用户还可通过GooFlow实例内置的bindHeadBtnEvent接口，自行扩展另外自定义的头部按钮的点击事件。
+另外，用户还可通过GooFlow实例内置的bindHeadBtnEvent接口，自行扩展另外自定义的头部按钮的点击事件。<br>
 ``` javaScript
 instance.myEvent = function(){
         this;  //GooFlow实例本身
