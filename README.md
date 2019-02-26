@@ -44,4 +44,4 @@
 |headBtns|`['save','undo','redo','reload','expand','new']`|顶部栏的按钮从左至右依次都有哪些类型名的按钮，仅当haveHead==true时有效。按钮【除撤销和重做外】的点击事件需要自定义|
 |headBtnRemarks|`['保存','撤销','重做','重置画布','扩大画布','清空画布']`|头部工具栏按钮提示文本|
 |haveTool|true|是否显示左侧工具栏|
-|toolBtns|`['start','end','fork','join','complex','node','task','chat','state','plug']`|左侧工具栏按钮(根据数组出现顺序的不同，还可以进行自定义排序)|
+|toolBtns|['start',<br>'end',<br>'fork',<br>'join',<br>'complex',<br>'node',<br>'task',<br>'chat',<br>'state',<br>'plug']|左侧工具栏按钮(根据数组出现顺序的不同，还可以进行自定义排序)|
