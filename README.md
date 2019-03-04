@@ -81,3 +81,6 @@
 |:-|:-|:-|
 |**onItemAdd**@当某个元素（节点/连线/分组泳道）被添加时，触发的方法 |`(id,type,json)`| **id**：元素唯一标识<br>**type**：'node'节点，'line'连线，'area'分组泳道<br>**json**：描述元素的相应结构数据|
 |**onItemDel**@当某个元素（节点/连线/分组泳道）被删除时，触发的方法 |`(id,type)`| **id**：元素唯一标识<br>**type**：'node'节点，'line连线'，'area'分组泳道|
+|**onItemMove**@当某个元素（节点/分组泳道）被移动至新位置时，触发的方法|`(id,type,left,top)`|**id**：元素唯一标识<br>**type**：'node'节点，'area'分组泳道<br>**left**：元素在新位置上相对于工作区的左边距，单位像素<br>**top**：元素在新位置上相对于工作区的上边距，单位像素|
+|**onItemRename**@当某个元素（节点/连线/分组泳道）被重命名时，触发的方法|`(id,name,type)`|**id**：元素唯一标识<br>**name**：元素的新名称<br>**type**：'node'节点，'line'连线，'area'分组泳道|
+|**onItemFocus**@当操作某个元素（节点/连线）被由不选中变成选中时，触发的方法。|`(id,type)`|**id**：元素唯一标识<br>**type**：'node'节点，'line连线'|
