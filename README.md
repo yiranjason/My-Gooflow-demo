@@ -85,3 +85,4 @@
 |**onItemRename**@当某个元素（节点/连线/分组泳道）被重命名时，触发的方法|`(id,name,type)`|**id**：元素唯一标识<br>**name**：元素的新名称<br>**type**：'node'节点，'line'连线，'area'分组泳道|
 |**onItemFocus**@当操作某个元素（节点/连线）被由不选中变成选中时，触发的方法|`(id,type)`|**id**：元素唯一标识<br>**type**：'node'节点，'line'连线|
 |**onItemBlur**@当操作某个元素（节点/连线）被由选中变成不选中时，触发的方法|`(id,type)`|**id**：元素唯一标识<br>**type**：'node'节点，'line'连线|
+|**onItemResize**@当某个元素（节点/分组泳道）被重定义大小或造型时，触发的方法|`(id,type,width,height)`|**id**：元素唯一标识<br>**name**：元素的新名称<br>**type**：'node'节点，'line'连线，'area'分组泳道<br>**width**：元素的新宽度<br>**height**：元素的新高度|
