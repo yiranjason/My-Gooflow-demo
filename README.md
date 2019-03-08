@@ -92,3 +92,6 @@
 
 #### Method interface | 方法接口
 
+|方法|示例|描述|
+|:-|:-|:-|
+|createGooFlow|`var demo = $("selector").createGooFlow(options);`|所有方法的基础，此方法返回一个 GooFlow 对象如果需要用到下面的方法，则必须初始化一个用于存储该对象的变量|
