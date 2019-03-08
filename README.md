@@ -96,3 +96,4 @@
 |:-|:-|:-|
 |__createGooFlow__|`var demo = $("selector").createGooFlow(options);`|所有方法的基础，此方法返回一个 GooFlow 对象如果需要用到下面的方法，则必须初始化一个用于存储该对象的变量|
 |__setNodeRemarks__|`demo.setNodeRemarks(remark);`|设置左侧工具栏的工具提示文本|
+|__switchToolBtn__|`demo.switchToolBtn(btnName)`|切换左边工具栏按钮|
