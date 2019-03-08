@@ -79,19 +79,20 @@
 
 |事件及描述|传参|参数说明|
 |:-|:-|:-|
-|**onItemAdd**@当某个元素（节点/连线/分组泳道）被添加时，触发的方法 |`(id,type,json)`| **id**：元素唯一标识<br>**type**：'node'节点，'line'连线，'area'分组泳道<br>**json**：描述元素的相应结构数据|
-|**onItemDel**@当某个元素（节点/连线/分组泳道）被删除时，触发的方法 |`(id,type)`| **id**：元素唯一标识<br>**type**：'node'节点，'line连线'，'area'分组泳道|
-|**onItemMove**@当某个元素（节点/分组泳道）被移动至新位置时，触发的方法|`(id,type,left,top)`|**id**：元素唯一标识<br>**type**：'node'节点，'area'分组泳道<br>**left**：元素在新位置上相对于工作区的左边距，单位像素<br>**top**：元素在新位置上相对于工作区的上边距，单位像素|
-|**onItemRename**@当某个元素（节点/连线/分组泳道）被重命名时，触发的方法|`(id,name,type)`|**id**：元素唯一标识<br>**name**：元素的新名称<br>**type**：'node'节点，'line'连线，'area'分组泳道|
-|**onItemFocus**@当操作某个元素（节点/连线）被由不选中变成选中时，触发的方法|`(id,type)`|**id**：元素唯一标识<br>**type**：'node'节点，'line'连线|
-|**onItemBlur**@当操作某个元素（节点/连线）被由选中变成不选中时，触发的方法|`(id,type)`|**id**：元素唯一标识<br>**type**：'node'节点，'line'连线|
-|**onItemResize**@当某个元素（节点/分组泳道）被重定义大小或造型时，触发的方法|`(id,type,width,height)`|**id**：元素唯一标识<br>**name**：元素的新名称<br>**type**：'node'节点，'line'连线，'area'分组泳道<br>**width**：元素的新宽度<br>**height**：元素的新高度|
-|**onItemMark**@当用醒目颜色标注某个元素（节点/连线）时触发的方法|`(id,type,mark)`|**id**：元素唯一标识<br>**type**：'node'节点，'line'连线|
-|**onLineMove**@当移动某条折线中段的位置时，触发的方法|`(id,M)`|**id**：元素唯一标识<br>**M**：折线中段的新X坐标（当type='lr'时）或者新y坐标（当type='tb'时），单位像素|
-|**onLineSetType**@当变换某条连线的类型时，触发的方法|`(id,type)`|**id**：元素唯一标识<br>**type**：连线的新类型，有三种：'sl'直线；'lr'中段可左右移动的折线'；'tb'中段可上下移动的折线有直线|
+|__onItemAdd__@当某个元素（节点/连线/分组泳道）被添加时，触发的方法 |`(id,type,json)`| **id**：元素唯一标识<br>**type**：'node'节点，'line'连线，'area'分组泳道<br>**json**：描述元素的相应结构数据|
+|__onItemDel__@当某个元素（节点/连线/分组泳道）被删除时，触发的方法 |`(id,type)`| **id**：元素唯一标识<br>**type**：'node'节点，'line连线'，'area'分组泳道|
+|__onItemMove__@当某个元素（节点/分组泳道）被移动至新位置时，触发的方法|`(id,type,left,top)`|**id**：元素唯一标识<br>**type**：'node'节点，'area'分组泳道<br>**left**：元素在新位置上相对于工作区的左边距，单位像素<br>**top**：元素在新位置上相对于工作区的上边距，单位像素|
+|__onItemRename__@当某个元素（节点/连线/分组泳道）被重命名时，触发的方法|`(id,name,type)`|**id**：元素唯一标识<br>**name**：元素的新名称<br>**type**：'node'节点，'line'连线，'area'分组泳道|
+|__onItemFocus__@当操作某个元素（节点/连线）被由不选中变成选中时，触发的方法|`(id,type)`|**id**：元素唯一标识<br>**type**：'node'节点，'line'连线|
+|__onItemBlur__@当操作某个元素（节点/连线）被由选中变成不选中时，触发的方法|`(id,type)`|**id**：元素唯一标识<br>**type**：'node'节点，'line'连线|
+|__onItemResize__@当某个元素（节点/分组泳道）被重定义大小或造型时，触发的方法|`(id,type,width,height)`|**id**：元素唯一标识<br>**name**：元素的新名称<br>**type**：'node'节点，'line'连线，'area'分组泳道<br>**width**：元素的新宽度<br>**height**：元素的新高度|
+|__onItemMark__@当用醒目颜色标注某个元素（节点/连线）时触发的方法|`(id,type,mark)`|**id**：元素唯一标识<br>**type**：'node'节点，'line'连线|
+|__onLineMove__@当移动某条折线中段的位置时，触发的方法|`(id,M)`|**id**：元素唯一标识<br>**M**：折线中段的新X坐标（当type='lr'时）或者新y坐标（当type='tb'时），单位像素|
+|__onLineSetType__@当变换某条连线的类型时，触发的方法|`(id,type)`|**id**：元素唯一标识<br>**type**：连线的新类型，有三种：'sl'直线；'lr'中段可左右移动的折线'；'tb'中段可上下移动的折线有直线|
 
 #### Method interface | 方法接口
 
-|方法|示例|描述|
+|方法|示例及传参|描述|
 |:-|:-|:-|
-|createGooFlow|`var demo = $("selector").createGooFlow(options);`|所有方法的基础，此方法返回一个 GooFlow 对象如果需要用到下面的方法，则必须初始化一个用于存储该对象的变量|
+|__createGooFlow__|`var demo = $("selector").createGooFlow(options);`|所有方法的基础，此方法返回一个 GooFlow 对象如果需要用到下面的方法，则必须初始化一个用于存储该对象的变量|
+|__setNodeRemarks__|`demo.setNodeRemarks(remark);`|设置左侧工具栏的工具提示文本|
