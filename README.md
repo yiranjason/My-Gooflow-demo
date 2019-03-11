@@ -99,3 +99,4 @@
 |__switchToolBtn__|`demo.switchToolBtn(btnName)`|切换左边工具栏按钮|
 |__getItemInfo__|`demo.geiItemInfo(id,type)`|获取连线、节点、分组泳道的详细信息|
 |__blurItem__|`demo.blurItem()`|取消所有节点/连线被选中的状态|
+|__focusItem__|`demo.focusItem(id,bool)`|选定某个节点/连线 <bool: true代表触发；false代表不触发> |
