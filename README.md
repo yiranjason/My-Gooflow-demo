@@ -100,3 +100,6 @@
 |__getItemInfo__|`demo.geiItemInfo(id,type)`|获取连线、节点、分组泳道的详细信息|
 |__blurItem__|`demo.blurItem()`|取消所有节点/连线被选中的状态|
 |__focusItem__|`demo.focusItem(id,bool)`|选定某个节点/连线 <bool: true代表触发；false代表不触发> |
+|__moveNode__|`demo.moveNode(id,left,top)`|移动节点到新的位置/转换线|
+|__setName__|`demo.setName(id,newname,type)`|设置节点/连线/分组泳道的文字信息|
+|__setNodeType__|`demo.setNodeType(id,type,newType)`|修改节点的类型|
