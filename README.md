@@ -108,4 +108,8 @@
 |__delNode__|`demo.delNode(id)`|删除节点|
 |__setTitle__|`demo.setTitle(text)`|设置流程图的名称|
 |__loadData__|`demo.loadData(data)`|载入一组数据|
-|__loadDataAjax__|||
+|__loadDataAjax__|`demo.loadDataAjax(para)`|用Ajax的方式，远程读取一组数据|
+|__exportData__|`demo.exportData()`|导出数据到一个变量中|
+|__clearData__|`demo.clearData()`|清空工作区已载入的数据|
+|__reinitSize__|`demo.reinitSize(width,height)`|重构整个流程设计器的宽高|
+|***连线相关的方法***|
