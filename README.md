@@ -103,3 +103,6 @@
 |__moveNode__|`demo.moveNode(id,left,top)`|移动节点到新的位置/转换线|
 |__setName__|`demo.setName(id,newname,type)`|设置节点/连线/分组泳道的文字信息|
 |__setNodeType__|`demo.setNodeType(id,type,newType)`|修改节点的类型|
+|__resizeNode__|`demo.resizeNode(id,width,height)`|设置节点的尺寸，仅支持非开始/结束节点|
+|__delNode__|`demo.delNode(id)`|删除节点|
+|__setTitle__|`demo.setTitle(text)`|设置流程图的名称|
