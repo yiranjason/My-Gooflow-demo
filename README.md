@@ -98,6 +98,7 @@
 |__setNodeRemarks__|`demo.setNodeRemarks(remark);`|设置左侧工具栏的工具提示文本|
 |__switchToolBtn__|`demo.switchToolBtn(btnName)`|切换左边工具栏按钮|
 |__getItemInfo__|`demo.geiItemInfo(id,type)`|获取连线、节点、分组泳道的详细信息|
+|***节点相关的方法***|
 |__blurItem__|`demo.blurItem()`|取消所有节点/连线被选中的状态|
 |__focusItem__|`demo.focusItem(id,bool)`|选定某个节点/连线 <bool: true代表触发；false代表不触发> |
 |__moveNode__|`demo.moveNode(id,left,top)`|移动节点到新的位置/转换线|
@@ -106,3 +107,5 @@
 |__resizeNode__|`demo.resizeNode(id,width,height)`|设置节点的尺寸，仅支持非开始/结束节点|
 |__delNode__|`demo.delNode(id)`|删除节点|
 |__setTitle__|`demo.setTitle(text)`|设置流程图的名称|
+|__loadData__|`demo.loadData(data)`|载入一组数据|
+|__loadDataAjax__|||
