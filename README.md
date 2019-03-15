@@ -113,3 +113,5 @@
 |__clearData__|`demo.clearData()`|清空工作区已载入的数据|
 |__reinitSize__|`demo.reinitSize(width,height)`|重构整个流程设计器的宽高|
 |***连线相关的方法***|
+|__drawLine__|`demo.drawLine(id,startPoint,endPoint,mark,dash)`|绘制一条箭头线，并返回DOM|
+|__drawPoly__|`demo.drawPoly(id,startPoint,m1,m2,endPoinr,mark)`|画一条只有两个中点的折线（注意，这画的是svg图形里面的线）<br>一般搭配 calcStartEnd 进行使用|
