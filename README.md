@@ -115,3 +115,5 @@
 |***连线相关的方法***|
 |__drawLine__|`demo.drawLine(id,startPoint,endPoint,mark,dash)`|绘制一条箭头线，并返回DOM|
 |__drawPoly__|`demo.drawPoly(id,startPoint,m1,m2,endPoinr,mark)`|画一条只有两个中点的折线（注意，这画的是svg图形里面的线）<br>一般搭配 calcStartEnd 进行使用|
+|__calcStartEnd__|`demo.calcStartEnd(element1,element2)`|计算两个节点的坐标<br>element1,element2:搭配getItemInfo使用|
+|__calcPolyPoints__|`demo.calcPolyPoints(element1,element2,type,M)`|如果两个节点间连接的是折线，则用此方法计算所有需要计算的坐标|
